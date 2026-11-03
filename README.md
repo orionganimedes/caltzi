@@ -2,7 +2,7 @@
 
 App de gestión residencial **local-first** en Flutter (Android, iOS; Web/Desktop como demo), con asistente conversacional integrado **Caltzibot**.
 
-> Plan completo: [`../PLAN-CALTZI.md`](../PLAN-CALTZI.md)
+> Plan completo: [`PLAN-CALTZI.md`](PLAN-CALTZI.md)
 
 - `appId`: `com.caltzi.app`
 - Sin backend en la v1: todo persiste en SQLite cifrado (drift + SQLCipher).
