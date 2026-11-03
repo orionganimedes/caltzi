@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "locale": "es-MX",
+  "umbral_confianza": 0.62,
+  "intenciones": [
+    {
+      "id": "saldo",
+      "tool": "consultar_saldo",
+      "ejemplos": [
+        "cuanto debo",
+        "cuanto debo de mantenimiento",
+        "mi saldo",
+        "estado de cuenta",
+        "tengo adeudos",
+        "cuanto tengo pendiente de pago"
+      ],
+      "sinonimos": ["adeudo", "deuda", "saldo", "pendiente", "cuota"],
+      "respuesta_sin_datos": "No encontré cargos registrados para tu casa."
+    },
+    {
+      "id": "cargos",
+      "tool": "listar_cargos",
+      "ejemplos": [
+        "que cargos tengo",
+        "mis cargos del mes",
+        "que me cobraron",
+        "detalle de mis adeudos"
+      ],
+      "sinonimos": ["cargo", "cobro", "concepto"],
+      "respuesta_sin_datos": "No hay cargos registrados este periodo."
+    },
+    {
+      "id": "visitantes_activos",
+      "tool": "listar_visitantes_activos",
+      "ejemplos": [
+        "quien puede entrar a mi casa",
+        "mis visitas de hoy",
+        "tengo visitantes activos",
+        "quien viene hoy"
+      ],
+      "sinonimos": ["visita", "visitante", "invitado", "pase"],
+      "respuesta_sin_datos": "No tienes visitantes con acceso vigente."
+    },
+    {
+      "id": "crear_visita",
+      "tool": "crear_visita",
+      "requiere_confirmacion": true,
+      "ejemplos": [
+        "registra una visita para manana",
+        "quiero invitar a alguien",
+        "crea un pase para mi mama",
+        "agrega un visitante"
+      ],
+      "sinonimos": ["registrar visita", "invitar", "pase", "qr"],
+      "campos_requeridos": ["nombre", "valido_desde", "valido_hasta"],
+      "respuesta_sin_datos": "Para registrar la visita necesito el nombre y el horario de vigencia."
+    },
+    {
+      "id": "reservaciones",
+      "tool": "consultar_reservaciones",
+      "ejemplos": [
+        "mis reservaciones",
+        "tengo el salon reservado",
+        "cuando puedo usar el area comun",
+        "reservaciones de esta semana"
+      ],
+      "sinonimos": ["reservacion", "reservar", "area comun", "salon", "cancha"],
+      "respuesta_sin_datos": "No tienes reservaciones registradas."
+    },
+    {
+      "id": "crear_reservacion",
+      "tool": "crear_reservacion",
+      "requiere_confirmacion": true,
+      "ejemplos": [
+        "reserva la cancha el sabado",
+        "aparta el salon para el domingo",
+        "quiero reservar un area comun"
+      ],
+      "sinonimos": ["apartar", "reservar area"],
+      "campos_requeridos": ["area", "fecha", "inicio", "fin"],
+      "respuesta_sin_datos": "Dime el área, la fecha y el horario que necesitas."
+    },
+    {
+      "id": "comunicados",
+      "tool": "resumir_comunicados",
+      "ejemplos": [
+        "que hay de nuevo",
+        "ultimos comunicados",
+        "hay algun aviso",
+        "resumen de comunicados"
+      ],
+      "sinonimos": ["aviso", "comunicado", "noticia", "circular"],
+      "respuesta_sin_datos": "No hay comunicados publicados."
+    },
+    {
+      "id": "documentos",
+      "tool": "buscar_documento",
+      "ejemplos": [
+        "donde esta el reglamento",
+        "busca el acta",
+        "documentos del residencial",
+        "necesito el formato de pago"
+      ],
+      "sinonimos": ["documento", "reglamento", "acta", "formato", "pdf"],
+      "respuesta_sin_datos": "No encontré un documento con ese nombre."
+    },
+    {
+      "id": "estado_cuenta",
+      "tool": "estado_cuenta_casa",
+      "ejemplos": [
+        "como va mi cuenta",
+        "historial de pagos",
+        "que he pagado este ano",
+        "resumen de mi cuenta"
+      ],
+      "sinonimos": ["historial", "pagos", "comprobante"],
+      "respuesta_sin_datos": "Aún no hay pagos registrados para tu casa."
+    }
+  ],
+  "fuera_de_alcance": [
+    "clima",
+    "noticias",
+    "deportes",
+    "consejos legales",
+    "temas medicos",
+    "codigo o programacion"
+  ]
+}

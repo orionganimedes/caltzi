@@ -1,0 +1,46 @@
+# Flutter / Dart
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+build/
+*.lock.bak
+
+# Plataformas
+android/.gradle/
+android/local.properties
+android/key.properties
+*.jks
+*.keystore
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# Local / datos
+*.hive
+*.sqlite
+*.db
+*.caltzi
+/backups/
+/tmp/
+
+# Cobertura y generados
+coverage/
+*.g.dart
+*.freezed.dart
+!lib/core/db/schema/*.g.dart
+
+# Secretos
+env/
+*.env
+secrets/
+google-services.json
+GoogleService-Info.plist
